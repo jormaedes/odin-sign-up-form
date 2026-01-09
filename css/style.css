@@ -5,10 +5,15 @@
   --accent-hover: #1C7ED6;
   --text-dark: #0B132B;
   --text-light: #F8F9FA;
-  --text-muted: #ADB5BD;
+  --text-muted: #dfdfdf;
   --border: #495057;
   --error: #E63946;
   --success: #2A9D8F;
+}
+
+@font-face {
+	font-family: norse;
+	src: url(../fonts/norse/Norsebold.otf);
 }
 
 * {
@@ -17,14 +22,20 @@
 	box-sizing: border-box;
 }
 
-.container {
-	display: flex;
+body {
+	font-family: sans-serif;
 	height: 100vh;
 }
 
+.container {
+	display: flex;
+	height: 100%;
+}
+
 .branding {
-	width: 30vw;
-	background: var(--primary);
+	width: 50vw;
+	background: url(../imgs/halie-west.jpg) no-repeat;
+	background-size: cover;
 }
 
 .branding header {
@@ -34,7 +45,7 @@
 	padding: 1.3em;
 	position: relative;
 	top: 10em;
-	background: rgba(11, 19, 43, .5);
+	background: rgba(0, 0, 0, 0.5);
 }
 
 .branding header img {
@@ -42,6 +53,86 @@
 }
 
 .title {
-	color: var(--text-light);
+	color: #fff;
 	font-size: 1vw;
+	font-family: 'norse';
+	font-size: 7vw;
+}
+
+
+.sigin-up {
+	flex-grow: 1;
+	background: #f7f7f7;
+}
+
+.sigin-up header {
+	padding: 5em 8em 2em 50px;
+	font-size: 25px;
+	font-weight: 600;
+	display: flex;
+	flex-direction: column;
+	gap: 1em;
+}
+
+fieldset {
+	border: none;
+	display: flex;
+	flex-direction: column;
+	gap: 1em;
+	background: #fff;
+	padding: 1em 0 1.3em 50px;
+}
+
+fieldset > p {
+	font-weight: 600;
+	font-size: 25px;
+}
+
+label {
+	font-size: 1em;
+	text-transform: uppercase;
+	letter-spacing: 1.5px;
+}
+
+.form_row {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 1.5em;
+}
+
+.form_group {
+	display: flex;
+	flex-direction: column;
+	gap: 2px;
+}
+
+input {
+	width: 300px;
+	height: 35px;
+	border-radius: 5px;
+	border: 1px solid #E5E7EB;
+	padding: 15px;
+	font-size: 18px;
+}
+
+button {
+	margin: 2em 0 0 50px;
+	padding: 10px 40px;
+	border-radius: 8px;
+	border: none;
+	background: #596D48;
+	cursor: pointer;
+	color: #fff;
+	font-size: 1.2em;
+	font-weight: 900;
+}
+
+section footer {
+	margin: 2em 0 0 50px;
+}
+
+a {
+	text-decoration: none;
+	color: #596D48;
+	font-weight: 900;
 }
