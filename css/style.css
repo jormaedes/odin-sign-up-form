@@ -136,6 +136,11 @@ button {
 	font-weight: 900;
 }
 
+button:hover {
+	background: #76bb39;
+	color: #000000;
+}
+
 section footer {
 	margin: 2em 0 0 50px;
 }
@@ -144,4 +149,8 @@ a {
 	text-decoration: none;
 	color: #596D48;
 	font-weight: 900;
+}
+
+a:hover {
+	color: #76bb39;
 }
